@@ -1,11 +1,11 @@
 import numpy as np
 
 
-filename_train_data = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/dexter_train.txt"
-filename_train_labels = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/dexter_train_labels.txt"
+filename_train_data = "dexter_train.txt"
+filename_train_labels = "dexter_train_labels.txt"
 
-filename_test_data = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/dexter_valid.txt"
-filename_test_labels = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/dexter_valid_labels.txt"
+filename_test_data = "dexter_valid.txt"
+filename_test_labels = "dexter_valid_labels.txt"
 
 
 # One hot encoded labelling format : -1 is [1,0] , +1 is [0,1]

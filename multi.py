@@ -255,7 +255,7 @@ def print_confusion_matrix(reals, predicts):
 
 
 if __name__ == '__main__':
-    dir_data = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/"
+    dir_data = ""
     data_train = np.load(dir_data + "non_norm_train_data.npy")
     label_train = np.load(dir_data + "non_norm_train_label.npy")
     data_test = np.load(dir_data + "non_norm_test_data.npy")
@@ -266,7 +266,7 @@ if __name__ == '__main__':
     mlp_test_data = np.load(dir_data + "valid_data.npy")
     mlp_test_label = np.load(dir_data + "valid_label.npy")
 
-    options = [0,0,1]
+    options = [1,1,1]
 
     if options[0] == 1:
         # K-NN CLASSIFICATION ANALYSIS
@@ -297,7 +297,7 @@ if __name__ == '__main__':
         # Classifier MLP
         # If model will be re-trained, the commented line below must be opened
         # train_mlp_classifier(x_train=mlp_train_data, y_train=mlp_train_label, x_test=mlp_test_data, y_test=mlp_test_label)
-        dir_classifier_model = "/Users/Macbook/Desktop/ComputerEngineering/Guz2019/DataMining/Project/dexter_mlp_model.h5"
+        dir_classifier_model = "dexter_mlp_model.h5"
         actuals, predictions = test_mlp_classifier(dir_model=dir_classifier_model,
                                                    test_data=mlp_test_data, test_label=mlp_test_label)
         print("MLP CLASSIFIER RESULTS : ")
